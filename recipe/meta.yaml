@@ -1,6 +1,6 @@
 {% set name = "portalocker" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "3fb35648a9e03f267e54c6186513abbd1cdd321c305502545a3550eea8b2923f" %}
+{% set version = "1.5.0" %}
+{% set sha256 = "d9af6b298554286a05b9fd361289fe8a86b2b0f41a82cd93b147155bd398c523" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
   
 requirements:
