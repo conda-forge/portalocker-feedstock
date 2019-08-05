@@ -1,6 +1,6 @@
 {% set name = "portalocker" %}
-{% set version = "1.5.0" %}
-{% set sha256 = "d9af6b298554286a05b9fd361289fe8a86b2b0f41a82cd93b147155bd398c523" %}
+{% set version = "1.5.1" %}
+{% set sha256 = "1ed88cff4807267ec3331d2a843529399256043851509c39487db97146dda821" %}
 
 package:
   name: {{ name|lower }}
