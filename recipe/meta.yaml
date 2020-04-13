@@ -35,7 +35,7 @@ test:
     - pytest-flakes >=2.0.0
     - pytest-pep8 >=1.0.6
   commands:
-    - pytest -k "not portalocker_tests/test_combined" portalocker_tests
+    - pytest -k "not test_combined" portalocker_tests
 
 about:
   home: https://github.com/WoLpH/portalocker
