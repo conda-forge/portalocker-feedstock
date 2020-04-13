@@ -1,6 +1,5 @@
 {% set name = "portalocker" %}
 {% set version = "1.7.0" %}
-{% set sha256 = "091364838ed6fbb68ea291c28982d1e56125c0d9e3fad5a4ac001db54dd862dc" %}
 
 package:
   name: {{ name|lower }}
@@ -9,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 091364838ed6fbb68ea291c28982d1e56125c0d9e3fad5a4ac001db54dd862dc
 
 build:
   number: 0
@@ -27,6 +26,16 @@ requirements:
 test:
   imports:
     - portalocker
+  source_files:
+    - portalocker_tests
+  requires:
+    - pytest >=3.4.0
+    - pytest-cache >=1.0
+    - pytest-cov >=2.5.1
+    - pytest-flakes >=2.0.0
+    - pytest-pep8 >=1.0.6
+  commands:
+    - pytest portalocker_tests
 
 about:
   home: https://github.com/WoLpH/portalocker
