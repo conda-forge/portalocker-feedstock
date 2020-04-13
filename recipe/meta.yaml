@@ -21,7 +21,7 @@ requirements:
     - pytest-runner
   run:
     - python
-    - pywin32 !226  # [win]
+    - pywin32  # [win]
 
 test:
   imports:
