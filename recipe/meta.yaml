@@ -28,6 +28,7 @@ test:
     - portalocker
   source_files:
     - portalocker_tests
+    - setup.py
   requires:
     - pytest >=3.4.0
     - pytest-cache >=1.0
