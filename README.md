@@ -5,7 +5,7 @@ Home: https://github.com/WoLpH/portalocker
 
 Package license: PSF-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Portalocker is a library to provide an easy API to file locking.
 
