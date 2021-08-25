@@ -1,5 +1,5 @@
 {% set name = "portalocker" %}
-{% set version = "2.3.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4e913d807aa6598c320e8a50c50e2ee0602bc45240b485e3f8bc06f13060084c
+  sha256: 455074565f7da80a9206b821fab72156e456a7e2a4d4cf1650f6bb6a584c396f
 
 build:
   number: 0
@@ -24,22 +24,22 @@ requirements:
     - pytest-runner
   run:
     - python
-    - pywin32  # [win]
 
 test:
   imports:
     - portalocker
   source_files:
-    - portalocker_tests
+    - tests
   requires:
     - pytest >=3.4.0
     - pytest-cache >=1.0
     - pytest-cov >=2.5.1
     - pytest-flakes >=2.0.0
     - pytest-pep8 >=1.0.6
-  # TODO: how to skip just test_combined ?
-  # commands:
-  #  - pytest -k "not test_combined" portalocker_tests
+  commands:
+   - pip check
+   - pytest tests/temporary_file_lock.py
+   - pytest tests/tests.py
 
 about:
   home: https://github.com/WoLpH/portalocker
