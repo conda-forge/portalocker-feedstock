@@ -36,6 +36,7 @@ test:
     - pytest-cov >=2.5.1
     - pytest-flakes >=2.0.0
     - pytest-pep8 >=1.0.6
+    - pip
   commands:
    - pip check
    - pytest tests/temporary_file_lock.py
