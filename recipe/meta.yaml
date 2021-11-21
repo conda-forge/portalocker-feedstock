@@ -37,8 +37,10 @@ test:
     - pytest-cov >=2.5.1
     - pytest-flakes >=2.0.0
     - pytest-pep8 >=1.0.6
+    - pip
+  commands:
+    - pip check
   # TODO: how to skip just test_combined ?
-  # commands:
   #  - pytest -k "not test_combined" portalocker_tests
 
 about:
