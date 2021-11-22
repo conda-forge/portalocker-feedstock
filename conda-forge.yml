@@ -6,3 +6,6 @@ provider:
   linux_ppc64le: azure
   win: azure
 test_on_native_only: true
+bot:
+  abi_migration_branches:
+    - v1.7.x
