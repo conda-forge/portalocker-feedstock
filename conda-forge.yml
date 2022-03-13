@@ -8,4 +8,7 @@ provider:
 test_on_native_only: true
 bot:
   abi_migration_branches:
-    - v1.7.x
+  - v1.7.x
+github:
+  branch_name: main
+  tooling_branch_name: main
