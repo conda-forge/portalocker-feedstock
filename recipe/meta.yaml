@@ -1,5 +1,5 @@
 {% set name = "portalocker" %}
-{% set version = "2.4.0" %}
+{% set version = "2.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a648ad761b8ea27370cb5915350122cd807b820d2193ed5c9cc28f163df637f4
+  sha256: 1e2e58e87c461fd548f1589e6ad01cac470eea9f50ad4b3ef96fa42693f785f7
 
 build:
   number: 0
