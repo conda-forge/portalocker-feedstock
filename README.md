@@ -1,11 +1,11 @@
-About portalocker
-=================
+About portalocker-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/portalocker-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/WoLpH/portalocker
 
 Package license: PSF-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/portalocker-feedstock/blob/main/LICENSE.txt)
 
 Summary: Portalocker is a library to provide an easy API to file locking.
 
